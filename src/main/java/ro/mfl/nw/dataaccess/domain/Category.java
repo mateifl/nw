@@ -1,5 +1,6 @@
 package ro.mfl.nw.dataaccess.domain;
 
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
@@ -7,7 +8,8 @@ import org.springframework.data.relational.core.mapping.Table;
 import lombok.Data;
 
 @Data
-@Table("categories")
+@NoArgsConstructor
+@Table("Categories")
 public class Category {
 	@Id
 	@Column("categoryid")
